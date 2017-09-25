@@ -1939,7 +1939,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #714dcd;
+  background: #2afbff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2488,7 +2488,14 @@ pre .javascript .function {
   border-radius: 4px;
 }
 #gitment-display-button:hover {
+  color: #fff;
   background: #0a9caf;
+}
+.gitment-comment-header {
+  margin: 12px 15px;
+  color: #666;
+/* background-color: #fff; */
+  border-radius: 3px;
 }
 .page-archive .archive-page-counter {
   position: relative;
