@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Duomu&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-01-25T04:45:55.542Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>duomu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JQuery隐藏/显示元素</title>
+    <link href="http://yoursite.com/2017/09/22/jquery-showhide-20170125/"/>
+    <id>http://yoursite.com/2017/09/22/jquery-showhide-20170125/</id>
+    <published>2017-09-22T07:46:06.338Z</published>
+    <updated>2017-01-25T04:45:55.542Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-方法一"><a href="#1-方法一" class="headerlink" title="1.方法一"></a>1.方法一</h3><pre><code>$(&quot;#id&quot;).hide(); //隐藏元素$(&quot;#id&quot;).show(); //显示元素</code></pre><h3 id="2-方法二"><a href="#2-方法二" class="headerlink" title="2.方法二"></a>2.方法二</h3><pre><code>$(&quot;id&quot;).css(&quot;display&quot;,&quot;none&quot;); //隐藏元素$(&quot;id&quot;).css(&quot;display&quot;,&quot;block&quot;); //显示元素</code></pre><h3 id="3-方法三"><a href="#3-方法三" class="headerlink" title="3.方法三"></a>3.方法三</h3><pre><code>$(&quot;#id&quot;)[0].style.display=&quot;none&quot;; //隐藏元素$(&quot;#id&quot;)[0].style.display=&quot;block&quot;; //显示元素</code></pre><h3 id="4-方法四"><a href="#4-方法四" class="headerlink" title="4.方法四"></a>4.方法四</h3><pre><code>$(&quot;id&quot;).toggle(); //切换元素状态</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-方法一&quot;&gt;&lt;a href=&quot;#1-方法一&quot; class=&quot;headerlink&quot; title=&quot;1.方法一&quot;&gt;&lt;/a&gt;1.方法一&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;$(&amp;quot;#id&amp;quot;).hide(); //隐藏元素
+$(&amp;quot;#id&amp;quot
+      
+    
+    </summary>
+    
+      <category term="Js/JQuery" scheme="http://yoursite.com/categories/Js-JQuery/"/>
+    
+    
+      <category term="Js/JQuery" scheme="http://yoursite.com/tags/Js-JQuery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JQuery操作单选按钮radio</title>
+    <link href="http://yoursite.com/2017/09/22/jquery-radio-20170125/"/>
+    <id>http://yoursite.com/2017/09/22/jquery-radio-20170125/</id>
+    <published>2017-09-22T07:46:06.335Z</published>
+    <updated>2017-01-25T04:46:20.899Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-获取当前选中项的值"><a href="#1-获取当前选中项的值" class="headerlink" title="1.获取当前选中项的值"></a>1.获取当前选中项的值</h3><pre><code>$(&apos;input:radio:checked&apos;).val();$(&quot;input[type=&apos;radio&apos;]:checked&quot;).val();$(&quot;input[name=&apos;radioName&apos;]:checked&quot;).val();</code></pre><h3 id="2-设置选中第一个radio"><a href="#2-设置选中第一个radio" class="headerlink" title="2.设置选中第一个radio"></a>2.设置选中第一个radio</h3><pre><code>$(&apos;input:radio:first&apos;).attr(&apos;checked&apos;, &apos;checked&apos;);</code></pre><p>or</p><pre><code>$(&apos;input:radio:first&apos;).attr(&apos;checked&apos;, &apos;true&apos;);</code></pre><h3 id="3-设置选中最后一个radio"><a href="#3-设置选中最后一个radio" class="headerlink" title="3.设置选中最后一个radio"></a>3.设置选中最后一个radio</h3><pre><code>$(&apos;input:radio:last&apos;).attr(&apos;checked&apos;, &apos;checked&apos;);</code></pre><p>or</p><pre><code>$(&apos;input:radio:last&apos;).attr(&apos;checked&apos;, &apos;true&apos;);</code></pre><h3 id="4-设置选中指定值的radio"><a href="#4-设置选中指定值的radio" class="headerlink" title="4.设置选中指定值的radio"></a>4.设置选中指定值的radio</h3><pre><code>$(&quot;input:radio[value=&apos;男&apos;]&quot;).attr(&apos;checked&apos;,&apos;true&apos;);</code></pre><p>or</p><pre><code>$(&quot;input[value=&apos;男&apos;]&quot;).attr(&apos;checked&apos;,&apos;true&apos;);</code></pre><h3 id="5-删除指定值的radio"><a href="#5-删除指定值的radio" class="headerlink" title="5.删除指定值的radio"></a>5.删除指定值的radio</h3><pre><code>$(&quot;input:radio[value=&apos;男&apos;]&quot;).remove();</code></pre><h3 id="6-删除指定索引的radio"><a href="#6-删除指定索引的radio" class="headerlink" title="6.删除指定索引的radio"></a>6.删除指定索引的radio</h3><pre><code>$(&quot;input:radio&quot;).eq(i).remove();//i=0,1,2....</code></pre><h3 id="7-遍历radio"><a href="#7-遍历radio" class="headerlink" title="7.遍历radio"></a>7.遍历radio</h3><pre><code>$(&apos;input:radio&apos;).each(function(index,domEle){});</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-获取当前选中项的值&quot;&gt;&lt;a href=&quot;#1-获取当前选中项的值&quot; class=&quot;headerlink&quot; title=&quot;1.获取当前选中项的值&quot;&gt;&lt;/a&gt;1.获取当前选中项的值&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;$(&amp;apos;input:radio:checke
+      
+    
+    </summary>
+    
+      <category term="Js/JQuery" scheme="http://yoursite.com/categories/Js-JQuery/"/>
+    
+    
+      <category term="Js/JQuery" scheme="http://yoursite.com/tags/Js-JQuery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java各个版本的新特性</title>
+    <link href="http://yoursite.com/2017/09/22/java-versions/"/>
+    <id>http://yoursite.com/2017/09/22/java-versions/</id>
+    <published>2017-09-22T07:46:06.332Z</published>
+    <updated>2017-02-21T06:02:26.832Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Java-1-0"><a href="#Java-1-0" class="headerlink" title="Java 1.0"></a>Java 1.0</h3><blockquote><p>Oak，1996</p></blockquote><h3 id="Java-1-1"><a href="#Java-1-1" class="headerlink" title="Java 1.1"></a>Java 1.1</h3><blockquote><p>1997</p></blockquote><ul><li>引入JDBC</li><li>支持内部类</li><li>引入Java Bean</li><li>引入RMI</li><li>引入反射（仅用于内省）</li></ul><h3 id="Java-1-2"><a href="#Java-1-2" class="headerlink" title="Java 1.2"></a>Java 1.2</h3><blockquote><p>1998</p></blockquote><ul><li>引入集合框架Collections</li><li>对字符串常量做内存映射</li><li>引入JIT编译器</li><li>引入对打包的Java文件进行数字签名</li><li>引入JFC,包括Swing1.0、拖放和Java 2D类库</li><li>引入Java插件</li><li>在JDBC中引入可滚动结果集、BLOB、CLOB、批量更新和用户自定义类型</li><li>在Applet中添加声音支持</li></ul><h3 id="Java-1-3"><a href="#Java-1-3" class="headerlink" title="Java 1.3"></a>Java 1.3</h3><blockquote><p>2000</p></blockquote><ul><li>引入Java Sound API</li><li>jar文件索引</li></ul><h3 id="Java-1-4"><a href="#Java-1-4" class="headerlink" title="Java 1.4"></a>Java 1.4</h3><blockquote><p>2004</p></blockquote><ul><li>XML处理</li><li>Java打印服务</li><li>引入Logging API</li><li>引入Java Web Start</li><li>引入JDBC 3.0 API</li><li>引入断言</li><li>引入Preferences API</li><li>引入链式异常处理</li><li>支持IPv6</li><li>支持正则表达式</li><li>引入Image I/O slot machine API</li></ul><h3 id="Java-5"><a href="#Java-5" class="headerlink" title="Java 5"></a>Java 5</h3><blockquote><p>2004</p></blockquote><ul><li>引入泛型</li><li>自动装箱和拆箱</li><li>枚举</li><li>可变参数</li><li>for-each循环</li><li>静态导入包</li><li>注解（元数据）</li><li>内省（Introspector）</li></ul><h3 id="Java-6"><a href="#Java-6" class="headerlink" title="Java 6"></a>Java 6</h3><blockquote><p>2006</p></blockquote><ul><li>支持脚本语言</li><li>引入JDBC4.0 API</li><li>引入Java Compiler API</li><li>可插拔注解</li><li>增加对Native PKI、Java GSS、Kerberos和LDAP的支持</li><li>继承Web Services</li></ul><h3 id="Java-7"><a href="#Java-7" class="headerlink" title="Java 7"></a>Java 7</h3><blockquote><p>2011</p></blockquote><ul><li>Switch语句块允许以字符串作为分支条件</li><li>在创建泛型对象时应用类型推断</li><li>在一个语句块中捕获多种异常</li><li>支持动态语言</li><li>支持try-with-resources</li><li>引入Java NIO.2开发包</li><li>数值类型可以用二进制字符串表示，并且可以在字符串中添加下划线</li><li>钻石型语法</li><li>null值的自动处理</li></ul><h3 id="Java-8"><a href="#Java-8" class="headerlink" title="Java 8"></a>Java 8</h3><blockquote><p>2014</p></blockquote><ul><li>Lambda表达式</li><li>接口的默认方法与静态方法</li><li>方法引用</li><li>重复注解@Repeatable</li><li>扩展注解的支持</li><li>Optional类（防止空指针异常）</li><li>Stream（类似于MapReduce）</li><li>Date/Time API(JSR 310) </li><li>JavaScript引擎Nashorn（允许Java与JavaScript互相调用）</li><li>Base64</li><li>更好的类型推测机制</li><li>编译器优化</li><li>并行数组</li><li>JVM的PermGen空间替换为Metaspace</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Java-1-0&quot;&gt;&lt;a href=&quot;#Java-1-0&quot; class=&quot;headerlink&quot; title=&quot;Java 1.0&quot;&gt;&lt;/a&gt;Java 1.0&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Oak，1996&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java IO</title>
+    <link href="http://yoursite.com/2017/09/22/java-io/"/>
+    <id>http://yoursite.com/2017/09/22/java-io/</id>
+    <published>2017-09-22T07:46:06.329Z</published>
+    <updated>2017-02-21T09:21:13.845Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="InputStream的类型"><a href="#InputStream的类型" class="headerlink" title="InputStream的类型"></a>InputStream的类型</h3><ul><li>字节数组</li><li>String对象</li><li>文件</li><li>管道</li><li>网络</li></ul><h3 id="OutputStream的类型"><a href="#OutputStream的类型" class="headerlink" title="OutputStream的类型"></a>OutputStream的类型</h3><ul><li>字节数组</li><li>文件</li><li>管道</li><li>网络</li></ul><h3 id="InputStream类"><a href="#InputStream类" class="headerlink" title="InputStream类"></a>InputStream类</h3><ul><li>FilterInputStream：从InputStream读入数据</li><li></li></ul><h3 id="OutputStream类"><a href="#OutputStream类" class="headerlink" title="OutputStream类"></a>OutputStream类</h3><ul><li>FilterOutputStream：向OutputStream写入数据</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;InputStream的类型&quot;&gt;&lt;a href=&quot;#InputStream的类型&quot; class=&quot;headerlink&quot; title=&quot;InputStream的类型&quot;&gt;&lt;/a&gt;InputStream的类型&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;字节数组&lt;/li&gt;
+&lt;li&gt;St
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jsp的九个内置对象</title>
+    <link href="http://yoursite.com/2017/09/22/jsp-20170123/"/>
+    <id>http://yoursite.com/2017/09/22/jsp-20170123/</id>
+    <published>2017-09-22T07:46:06.325Z</published>
+    <updated>2017-01-25T03:18:22.240Z</updated>
+    
+    <content type="html"><![CDATA[<p>request：客户端的请求信息被封装在request对象中，通过它才能了解到客户的需求，然后做出响应</p><p>response：response对象包含了响应客户请求的有关信息，但在JSP中很少直接用到它。</p><p>session：session对象指的是客户端与服务器的一次会话，从客户连到服务器的一个WebApplication开始，直到客户端与服务器断开连接为止。它是HttpSession类的实例。</p><p>out：out对象是JspWriter类的实例,是向客户端输出内容常用的对象。</p><p>page：page对象就是指向当前JSP页面本身，有点象类中的this指针。</p><p>application：application对象实现了用户间数据的共享，可存放全局变量。</p><p>exception：当一个页面在运行过程中发生了例外，就产生这个对象。如果一个JSP页面要应用此对象，就必须把isErrorPage设为true，否则无法编译。</p><p>pageContext：提供了对JSP页面内所有的对象及名字空间的访问，也就是说他可以访问到本页所在的SESSION，也可以取本页面所在的application的某一属性值，他相当于页面中所有功能的集大成者。</p><p>config：config对象是在一个Servlet初始化时，JSP引擎向它传递信息用的，此信息包括Servlet初始化时所要用到的参数（通过属性名和属性值构成）以及服务器的有关信息（通过传递一个ServletContext对象）。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;request：客户端的请求信息被封装在request对象中，通过它才能了解到客户的需求，然后做出响应&lt;/p&gt;
+&lt;p&gt;response：response对象包含了响应客户请求的有关信息，但在JSP中很少直接用到它。&lt;/p&gt;
+&lt;p&gt;session：session对象指的是客户
+      
+    
+    </summary>
+    
+      <category term="Jsp" scheme="http://yoursite.com/categories/Jsp/"/>
+    
+    
+      <category term="Jsp" scheme="http://yoursite.com/tags/Jsp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2017/09/22/test/"/>
+    <id>http://yoursite.com/2017/09/22/test/</id>
+    <published>2017-09-22T03:32:40.000Z</published>
+    <updated>2017-09-22T06:52:47.460Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="cate1" scheme="http://yoursite.com/categories/cate1/"/>
+    
+    
+      <category term="tag1" scheme="http://yoursite.com/tags/tag1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/09/22/hello-world/"/>
+    <id>http://yoursite.com/2017/09/22/hello-world/</id>
+    <published>2017-09-22T03:30:19.083Z</published>
+    <updated>2017-09-22T06:52:47.427Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
