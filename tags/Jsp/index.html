@@ -551,14 +551,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://duomu.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -574,9 +566,34 @@
 
 
 
+  
 
 
 
+
+
+
+
+
+     
+     
+     
+     
+     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+     <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+     
+         <script type="text/javascript">
+             var gitment = new Gitment({
+                id: document.location.href, 
+                 owner: 'duomu',
+                 repo: 'duomu.github.io',
+                 oauth: {
+                     client_id: 'bf9c346d9e3611d9b0d5',
+                     client_secret: '991a35f53be18fb32fe69029bc6e27866f7b9058',
+                 }});
+             gitment.render('gitment-container');
+         </script>
+     
 
 
   

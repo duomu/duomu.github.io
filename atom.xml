@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-25T10:32:42.230Z</updated>
+  <updated>2017-09-25T11:26:49.915Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,17 @@
     <link href="http://yoursite.com/2017/09/25/hexo%E6%8D%90%E8%B5%A0%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/"/>
     <id>http://yoursite.com/2017/09/25/hexo捐赠图片无法显示/</id>
     <published>2017-09-25T10:31:46.000Z</published>
-    <updated>2017-09-25T10:32:42.230Z</updated>
+    <updated>2017-09-25T11:26:49.915Z</updated>
+    
+    <content type="html"><![CDATA[<p>查看图片名是否正确、规范，将大写后缀改成小写后缀。</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;查看图片名是否正确、规范，将大写后缀改成小写后缀。&lt;/p&gt;
+
+      
     
     </summary>
     

@@ -71,18 +71,18 @@
 
 
 
-<meta name="description" content="不积跬步无以至千里">
+<meta name="description" content="查看图片名是否正确、规范，将大写后缀改成小写后缀。">
 <meta name="keywords" content="Hexo 捐赠 打赏">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo捐赠图片无法显示">
 <meta property="og:url" content="http://yoursite.com/2017/09/25/hexo捐赠图片无法显示/index.html">
 <meta property="og:site_name" content="Duomu&#39;s blog">
-<meta property="og:description" content="不积跬步无以至千里">
+<meta property="og:description" content="查看图片名是否正确、规范，将大写后缀改成小写后缀。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-25T10:32:42.230Z">
+<meta property="og:updated_time" content="2017-09-25T11:26:49.915Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo捐赠图片无法显示">
-<meta name="twitter:description" content="不积跬步无以至千里">
+<meta name="twitter:description" content="查看图片名是否正确、规范，将大写后缀改成小写后缀。">
 
 
 
@@ -319,17 +319,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/09/25/hexo捐赠图片无法显示/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/25/hexo捐赠图片无法显示/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -365,7 +354,8 @@
       
 
       
-        
+        <p>查看图片名是否正确、规范，将大写后缀改成小写后缀。</p>
+
       
     </div>
     
@@ -494,12 +484,9 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+     
+       <div id="gitment-container"></div>
+     
     
   </div>
 
@@ -761,26 +748,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://duomu.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/09/25/hexo捐赠图片无法显示/';
-          this.page.identifier = '2017/09/25/hexo捐赠图片无法显示/';
-          this.page.title = 'hexo捐赠图片无法显示';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://duomu.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -796,9 +763,34 @@
 
 
 
+  
 
 
 
+
+
+
+
+
+     
+     
+     
+     
+     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+     <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+     
+         <script type="text/javascript">
+             var gitment = new Gitment({
+                id: document.location.href, 
+                 owner: 'duomu',
+                 repo: 'duomu.github.io',
+                 oauth: {
+                     client_id: 'bf9c346d9e3611d9b0d5',
+                     client_secret: '991a35f53be18fb32fe69029bc6e27866f7b9058',
+                 }});
+             gitment.render('gitment-container');
+         </script>
+     
 
 
   
