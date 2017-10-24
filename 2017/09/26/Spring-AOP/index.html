@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Jsp," />
+  <meta name="keywords" content="spring,aop," />
 
 
 
@@ -71,18 +71,18 @@
 
 
 
-<meta name="description" content="request：客户端的请求信息被封装在request对象中，通过它才能了解到客户的需求，然后做出响应 response：response对象包含了响应客户请求的有关信息，但在JSP中很少直接用到它。 session：session对象指的是客户端与服务器的一次会话，从客户连到服务器的一个WebApplication开始，直到客户端与服务器断开连接为止。它是HttpSession类的实例。 out">
-<meta name="keywords" content="Jsp">
+<meta name="description" content="what in a word(application) how to use what in detail basic design(graph) source code your understanding(blog)">
+<meta name="keywords" content="spring,aop">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jsp的九个内置对象">
-<meta property="og:url" content="http://yoursite.com/2017/09/22/jsp-20170123/index.html">
+<meta property="og:title" content="Spring AOP">
+<meta property="og:url" content="http://yoursite.com/2017/09/26/Spring-AOP/index.html">
 <meta property="og:site_name" content="Duomu&#39;s blog">
-<meta property="og:description" content="request：客户端的请求信息被封装在request对象中，通过它才能了解到客户的需求，然后做出响应 response：response对象包含了响应客户请求的有关信息，但在JSP中很少直接用到它。 session：session对象指的是客户端与服务器的一次会话，从客户连到服务器的一个WebApplication开始，直到客户端与服务器断开连接为止。它是HttpSession类的实例。 out">
+<meta property="og:description" content="what in a word(application) how to use what in detail basic design(graph) source code your understanding(blog)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-01-25T03:18:22.240Z">
+<meta property="og:updated_time" content="2017-09-26T07:31:23.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jsp的九个内置对象">
-<meta name="twitter:description" content="request：客户端的请求信息被封装在request对象中，通过它才能了解到客户的需求，然后做出响应 response：response对象包含了响应客户请求的有关信息，但在JSP中很少直接用到它。 session：session对象指的是客户端与服务器的一次会话，从客户连到服务器的一个WebApplication开始，直到客户端与服务器断开连接为止。它是HttpSession类的实例。 out">
+<meta name="twitter:title" content="Spring AOP">
+<meta name="twitter:description" content="what in a word(application) how to use what in detail basic design(graph) source code your understanding(blog)">
 
 
 
@@ -112,13 +112,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/22/jsp-20170123/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/26/Spring-AOP/"/>
 
 
 
 
 
-  <title>Jsp的九个内置对象 | Duomu's blog</title>
+  <title>Spring AOP | Duomu's blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/22/jsp-20170123/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/26/Spring-AOP/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="duomu">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Jsp的九个内置对象</h1>
+          <h1 class="post-title" itemprop="name headline">Spring AOP</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-22T15:46:06+08:00">
-                2017-09-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-26T11:45:30+08:00">
+                2017-09-26
               </time>
             
 
@@ -306,8 +306,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Jsp/" itemprop="url" rel="index">
-                    <span itemprop="name">Jsp</span>
+                  <a href="/categories/Spring/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring</span>
                   </a>
                 </span>
 
@@ -323,7 +323,7 @@
 
           
           
-             <span id="/2017/09/22/jsp-20170123/" class="leancloud_visitors" data-flag-title="Jsp的九个内置对象">
+             <span id="/2017/09/26/Spring-AOP/" class="leancloud_visitors" data-flag-title="Spring AOP">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -354,15 +354,12 @@
       
 
       
-        <p>request：客户端的请求信息被封装在request对象中，通过它才能了解到客户的需求，然后做出响应</p>
-<p>response：response对象包含了响应客户请求的有关信息，但在JSP中很少直接用到它。</p>
-<p>session：session对象指的是客户端与服务器的一次会话，从客户连到服务器的一个WebApplication开始，直到客户端与服务器断开连接为止。它是HttpSession类的实例。</p>
-<p>out：out对象是JspWriter类的实例,是向客户端输出内容常用的对象。</p>
-<p>page：page对象就是指向当前JSP页面本身，有点象类中的this指针。</p>
-<p>application：application对象实现了用户间数据的共享，可存放全局变量。</p>
-<p>exception：当一个页面在运行过程中发生了例外，就产生这个对象。如果一个JSP页面要应用此对象，就必须把isErrorPage设为true，否则无法编译。</p>
-<p>pageContext：提供了对JSP页面内所有的对象及名字空间的访问，也就是说他可以访问到本页所在的SESSION，也可以取本页面所在的application的某一属性值，他相当于页面中所有功能的集大成者。</p>
-<p>config：config对象是在一个Servlet初始化时，JSP引擎向它传递信息用的，此信息包括Servlet初始化时所要用到的参数（通过属性名和属性值构成）以及服务器的有关信息（通过传递一个ServletContext对象）。</p>
+        <p>what in a word(application)</p>
+<p>how to use</p>
+<p>what in detail</p>
+<p>basic design(graph)</p>
+<p>source code</p>
+<p>your understanding(blog)</p>
 
       
     </div>
@@ -403,7 +400,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Jsp/" rel="tag"># Jsp</a>
+            <a href="/tags/spring-aop/" rel="tag"># spring,aop</a>
           
         </div>
       
@@ -416,8 +413,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/22/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/09/25/hexo捐赠图片无法显示/" rel="next" title="hexo捐赠图片无法显示">
+                <i class="fa fa-chevron-left"></i> hexo捐赠图片无法显示
               </a>
             
           </div>
@@ -426,8 +423,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/22/java-io/" rel="prev" title="Java IO">
-                Java IO <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/24/修复bug的教训/" rel="prev" title="修复bug的教训">
+                修复bug的教训 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
