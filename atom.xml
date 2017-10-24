@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-24T10:20:45.241Z</updated>
+  <updated>2017-10-24T10:51:01.799Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2017/10/24/%E4%BF%AE%E5%A4%8Dbug%E7%9A%84%E6%95%99%E8%AE%AD/"/>
     <id>http://yoursite.com/2017/10/24/修复bug的教训/</id>
     <published>2017-10-24T09:50:59.000Z</published>
-    <updated>2017-10-24T10:20:45.241Z</updated>
+    <updated>2017-10-24T10:51:01.799Z</updated>
     
     <content type="html"><![CDATA[<p>以后无论是从后台异常追踪bug，还是从前端异常追踪bug，都要多方面考虑问题，一个页面展示错误，可能是多方面原因造成的，不要想当然，所有疑虑都应该亲自求证，只要有疑虑都应该求证。</p><p>要认真自测，在问题分析阶段自测，在编码阶段自测，在提测阶段自测，不要嫌麻烦而省略这重要的环节，多思考测试用例，尽量覆盖所有情况，不要偷懒，思想上和行为上都不要偷懒，保证自己想到的情况都测过了，都没有问题，不要太依赖qa。</p><p>能当面沟通就当面沟通，当面沟通比QQ沟通更有效、沟通质量更高。</p><p>除了你妈，不要依赖任何人，同事、朋友、男朋友都不可依赖，有话漂流瓶，有话写日记，少跟别人吐槽，少向别人倾诉。</p>]]></content>
     
@@ -35,10 +35,10 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="工作感悟" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="工作感悟" scheme="http://yoursite.com/tags/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/"/>
     
   </entry>
   
